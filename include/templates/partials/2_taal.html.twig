@@ -1,0 +1,331 @@
+{% extends "components/page.html.twig" %}
+
+{% block leftContent %}
+    <p>
+        Taal staat aan de basis van onze ontwikkeling. Bij het stimuleren van de taalbeheersing is plezier noodzakelijk; als mensen plezier beleven aan taal dan begrijpen ze een taal veel beter en sneller. Dit begint al bij de allerjongsten. 
+    </p>
+    <p>
+       De mediacoaches bevorderen samen met de basisscholen en voorschoolse instellingen het leesplezier bij de kinderen. Het project <a target="_blank" href="https://youtu.be/gXUUR2x4qSM">Kwispellezen</a>, dat zowel in Waalre als in Eindhoven is uitgerold, is een mooi voorbeeld hoe kinderen plezier in lezen terugkrijgen door wekelijks voor te lezen aan een speciaal getrainde voorleeshond. 
+    </p>
+    <p>
+        Na afloop van het pilotjaar van het project <a target="_blank" href="https://www.youtube.com/watch?v=oCow_bCym6k">Samen Thuis in Taal</a> kunnen we concluderen dat meer dan 500 laagtaalvaardige kinderen wekelijks zijn voorgelezen. Samen met ruim 100 vrijwilligers en 12 Spilcentra is er veel optimisme over de toekomst van het project.  
+    </p>
+    <p>
+        Ook voor volwassenen blijven we projecten en producten ontwikkelen. Als eerste Nederlandse bibliotheek mogen we <a target="_blank" href="https://fe.bolindadigital.com/wldcs_bol_fo/b2i/mainPage.html?b2bSite=6411">BorrowBox</a> aan onze leden aanbieden; een Engelstalige collectie e-books en audio boeken. Ook <a target="_blank" href="https://www.ed.nl/eindhoven/bieb-eindhoven-op-de-surinaamse-toer~af0bcf32/">Books on Tour</a> beleefde bij ons zijn primeur. Met dit literaire programma, in samenwerking met onder andere de Vrije Uitgevers samengesteld, wordt literatuur feestelijk onder de aandacht gebracht.  
+    </p>
+    <p>
+        De roep om bevordering van de taalbeheersing wordt landelijk gehoord, met de oproep voor een <a target="_blank" href="https://www.onderwijsraad.nl/binaries/onderwijsraad/documenten/adviezen/2019/06/24/leesadvies/ONLINE-Lees-Een-oproep-tot-een-leesoffensief.pdf">Leesoffensief</a>, en zeker ook binnen de stad. Samen met de gemeente en het Ster College is het <a target="_blank" href="https://studio040.nl/nieuws/artikel/stadsplan-moet-laaggeletterdheid-tegengaan">Stadsplan Basisvaardigheden</a> ondertekend, om jaarlijks 1.700 laaggeletterde Eindhovenaren extra te ondersteunen. 
+    </p>
+{% endblock %}
+
+{% block rightContent %}
+
+    <div class="flex flex-wrap p-6 pb-4">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark" style="padding-bottom:">
+                Aantal uitgeleende materialen
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5">
+          {% include "components/video.html.twig" with {
+                source : "taal/001_Aantal_uitgeleende_boeken"
+          } %}
+        </div>
+        <div class="w-1/5 hidden lg:flex lg:flex-col justify-end pl-6">
+            <a target="_blank" href="https://zoeken.bibliotheekeindhoven.nl/detail/Lucinda-Riley/Maia%27s-verhaal/Boek/?itemid=%7Cuniversal%2Fsru%7Chttp%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F412670690" class="text-{{ color }}-dark">
+                Meest uitgeleende boek: De zeven zussen 1, van Lucinda Riley<br>
+                <img class="mt-2 mb-4" src="assets/chapter-two/link-teal.svg" style="width: 30px">
+            </a>
+            <a target="_blank" href="https://zoeken.bibliotheekeindhoven.nl/detail/Jeff-Kinney/Drie-keer-niks/Boek/?itemid=%7Cuniversal%2Fsru%7Chttp%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F409175986" class="text-{{ color }}-dark">
+                Meest uitgeleende jeugdboek: Drie keer niks; leven van een loser, van Jeff Kinney<br>
+                <img class="mt-2" src="assets/chapter-two/link-teal.svg" style="width: 30px">
+            </a>
+        </div>
+        <div class="w-full lg:hidden">
+            <a target="_blank" href="https://zoeken.bibliotheekeindhoven.nl/detail/Lucinda-Riley/Maia%27s-verhaal/Boek/?itemid=%7Cuniversal%2Fsru%7Chttp%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F412670690" class="text-{{ color }}-dark">
+                <div class="flex mt-4">
+                    <div class="pr-2">
+                        <img class="mt-2" src="assets/chapter-two/link-teal.svg" style="width: 32px">
+                    </div>
+                    <div class="flex-grow self-center">
+                        Meest uitgeleend boek: De zeven zussen 1, van Lucinda Riley
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" href="https://zoeken.bibliotheekeindhoven.nl/detail/Jeff-Kinney/Drie-keer-niks/Boek/?itemid=%7Cuniversal%2Fsru%7Chttp%3A%2F%2Fdata.bibliotheek.nl%2Fggc%2Fppn%2F409175986" class="text-{{ color }}-dark">
+                <div class="flex mt-4">
+                    <div class="pr-2">
+                        <img class="mt-2" src="assets/chapter-two/link-teal.svg" style="width: 32px">
+                    </div>
+                    <div class="flex-grow self-center">
+                        Meest uitgeleende jeugdboek: Drie keer niks; leven van een loser, van Jeff Kinney
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6 pb-4">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark" style="padding-bottom:">
+                Aantal actieve e-bookleners
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+        <p class="text-{{ color }}-dark pb-3">
+                E-bookleners jeugd (0-17)
+            </p>
+           {% include "components/video.html.twig" with {
+                source : "taal/002_Aantal_actieve_e-bookleners"
+          } %}
+        </div>
+        <div class="w-full lg:w-4/5 pt-6">
+            <p class="text-{{ color }}-dark pb-3">
+                E-bookleners volwassen (18+)
+            </p>
+            <span class="number-xl">2.366</span>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Uitgeleende e-books
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5">
+            {% include "components/video.html.twig" with {
+                source : "taal/003_Uitgeleende_e-books"
+            } %}
+        </div>
+        <div class="w-1/5 hidden lg:flex flex-wrap items-end pl-6">
+            <p class="text-{{ color }}-dark">
+                Voor elk wat wils:
+            </p>
+            <a target="_blank" href="https://www.bibliotheekeindhoven.nl/collectie/inspiratie.html" class="w-full text-{{ color }}-dark">
+                De catalogus<br>
+                <img class="mt-2" src="assets/chapter-two/link-teal.svg" style="width: 30px">
+            </a>
+            <a target="_blank" href="https://www.onlinebibliotheek.nl/e-books/nieuw-in-de-collectie.html" class="w-full text-{{ color }}-dark">
+                E-books<br>
+                <img class="mt-2" src="assets/chapter-two/link-teal.svg" style="width: 30px">
+            </a>
+            <a target="_blank" href="https://www.onlinebibliotheek.nl/luisterbieb.html" class="w-full text-{{ color }}-dark">
+                Luisterboeken<br>
+                <img class="mt-2" src="assets/chapter-two/link-teal.svg" style="width: 30px">
+            </a>
+            <a target="_blank" href="https://fe.bolindadigital.com/wldcs_bol_fo/b2i/mainPage.html?b2bSite=6411" class="w-full text-{{ color }}-dark">
+                BorrowBox<br>
+                <img class="mt-2" src="assets/chapter-two/link-teal.svg" style="width: 30px">
+            </a>
+        </div>
+
+        <div class="w-full lg:hidden">
+            <p class="text-{{ color }}-dark">
+                Voor elk wat wils:
+            </p>
+            <a target="_blank" href="https://www.bibliotheekeindhoven.nl/collectie/inspiratie.html" class="text-{{ color }}-dark">
+                <div class="flex mt-4">
+                    <div class="pr-2">
+                        <img class="mt-2" src="assets/chapter-two/link-teal.svg" style="width: 32px">
+                    </div>
+                    <div class="flex-grow self-center">
+                        De catalogus
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" href="https://www.onlinebibliotheek.nl/e-books/nieuw-in-de-collectie.html" class="text-{{ color }}-dark">
+                <div class="flex mt-4">
+                    <div class="pr-2">
+                        <img class="mt-2" src="assets/chapter-two/link-teal.svg" style="width: 32px">
+                    </div>
+                    <div class="flex-grow self-center">
+                        E-books</div>
+                </div>
+            </a>
+            <a target="_blank" href="https://fe.bolindadigital.com/wldcs_bol_fo/b2i/mainPage.html?b2bSite=6411" class="text-{{ color }}-dark">
+                <div class="flex mt-4">
+                    <div class="pr-2">
+                        <img class="mt-2" src="assets/chapter-two/link-teal.svg" style="width: 32px">
+                    </div>
+                    <div class="flex-grow self-center">
+                        Luisterboeken</div>
+                </div>
+            </a>
+            <a target="_blank" href="https://www.onlinebibliotheek.nl/luisterbieb.html" class="text-{{ color }}-dark">
+                <div class="flex mt-4">
+                    <div class="pr-2">
+                        <img class="mt-2" src="assets/chapter-two/link-teal.svg" style="width: 32px">
+                    </div>
+                    <div class="flex-grow self-center">
+                        BorrowBox</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                BorrowBox
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 flex">
+          <div class="w-1/2">
+                <span class="number-lg">187</span> <br>
+                gebruikers <br>(sinds eind april 2019)
+            </div>
+            <div class="w-1/2">
+                <span class="number-lg">339</span> <br>
+                geleende <br>materialen
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Deelnemers wekelijks Taalcafé (gemiddelde per bijeenkomst)
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 flex">
+            <img class="h-full w-full" src="assets/chapter-two/taalcafe.svg" alt="">
+          {# <div class="w-1/2 flex items-center">
+                <div class="w-full">
+                  De Witte Dame <br>
+                  <span class="number-lg">48</span>
+                </div>
+            </div>
+            <div class="w-1/2 flex flex-wrap items-between">
+                <div class="w-full mb-16">
+                  de Bibliotheek <br>Waalre <br>
+                  <span class="number-lg">11</span>
+                </div>
+                <div class="w-full">
+                  Expeditie E <br>(start oktober 2019) <br>
+                  <span class="number-lg">9</span>
+                </div>
+            </div> #}
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Aantal uitgerijkte Boekstartkoffertjes*
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 flex flex-wrap">
+          <div class="w-full mb-4">
+            <span class="number-xl">364</span>
+          </div>
+          <div class="text-{{ color }}-dark">
+            <small>*Twee gratis boekjes om samen met je baby te lezen.</small>
+          </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Thuisbezorgingen van geleende materialen
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 flex flex-wrap">
+          <div class="w-full">
+            <span class="number-xl">738</span>
+          </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                We werkten samen met
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 flex flex-wrap">
+          {% include "components/video.html.twig" with {
+              source: 'taal/004_We_werken_samen_met'
+          } %}
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Aantal afhalingen bewonersbibliotheken
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 flex flex-wrap">
+          {% include "components/video.html.twig" with {
+              source: 'taal/005_Aantal_afgalingen_bewonersbibliotheken'
+          } %}
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Uitleningen op school
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 flex flex-wrap">
+          <div class="w-full">
+            <span class="number-xl">391.178</span>
+          </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Schoolprojecten leesplezier
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 flex flex-wrap">
+          <div class="text-{{ color }}-dark">
+            Projecten
+          </div>
+          {% include "components/video.html.twig" with {
+              source: 'taal/006_Schoolprojecten_leesplezier'
+          } %}
+          <div class="text-{{ color }}-dark mb-4">
+            Kinderen die deelnamen
+          </div>
+          {% include "components/video.html.twig" with {
+              source: 'taal/007_Kinderen_die_deelnamen'
+          } %}
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark"></p>
+        </div>
+    </div>
+
+
+{% endblock %}

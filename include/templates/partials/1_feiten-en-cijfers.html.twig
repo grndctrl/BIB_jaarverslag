@@ -1,0 +1,294 @@
+{% extends "components/page.html.twig" %}
+
+{% block leftContent %}
+    <p>
+        Het uitgangspunt bij de activiteiten van de bibliotheek is ontwikkeling van alle inwoners van Eindhoven en Waalre. De manier waarop dit gebeurt is even divers als de inwoners zelf. Met een wereld aan boeken, digitale materialen, deskundige medewerkers en talloze inspirerende activiteiten. We bieden een podium voor het talent dat in de regio aanwezig is en dagen uit om kennis te delen.
+    </p>
+    <p>
+        De roep om aanwezigheid in de wijken is na jaren nog steeds niet verstomd. Ook bij het (niet)gebruikersonderzoek dat wij deden ten behoeve van onze toekomstvisie werd deze vraag weer <a target="_blank" href="https://mijnbieb040.nl/fotogalerij">opgehaald.</a> In april openden we <a target="_blank" href="https://www.ed.nl/eindhoven/bieb-eindhoven-met-expeditie-e-in-winkelcentrum-woensel~ad9f3c87/">Expeditie E.</a> In hartje Winkelcentrum Woensel is dit de uitgelezen locatie om het persoonlijke contact met de wijkbewoners op te zoeken. Een logische plek gezien de kans op laaggeletterdheid en digibetisme in de omliggende wijken. Op basis van dit contact experimenteren we en onderzoeken we de functie van een toekomstbestendige bibliotheek. We stellen een activiteitenprogramma samen dat nauw aansluit op <a target="_blank" href="https://www.ed.nl/eindhoven/huiskamergevoel-in-bibliotheek-expeditie-e-in-winkelcentrum-woensel-in-eindhoven~a428ffdf/">de behoeftes van de inwoners.</a>
+    </p>
+    <p>
+        Voor de periode 2019 – 2023 zijn we wederom gecertificeerd. Een externe auditcommissie was overtuigd van onze toekomstbestendigheid en de kwaliteit van onze programma’s en diensten voor geletterdheid. 
+    </p>
+    <p>De doorontwikkeling Bibliotheek op Spil is bestuurlijk goedgekeurd en vastgesteld in de Lokale Educatieve Agenda (LEA). Hierin zijn onder andere afspraken gemaakt over de leerlijnen Leesplezier en Digitale geletterdheid en de differentiatie van het aanbod op niveau en maatwerk. 
+  </p>
+  <p>
+{% endblock %}
+
+{% block rightContent %}
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                De vaste locaties van de bibliotheek
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5">
+            {% include "components/video.html.twig" with {
+                source : "feiten/001_vaste_locaties_MAP"
+            } %}
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                De bibliotheek is aanwezig op
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 mb-2 flex">
+            <div class="w-1/5 flex items-end">
+                <span class="number-lg">65</span>
+            </div>
+            <div class="w-4/5 flex items-end">
+                <span class="counter-lg">spilcentra en basisscholen <br>in Eindhoven<small class="text-{{ color }}-dark">*</small></span>
+            </div>
+        </div>
+        <div class="w-full lg:w-4/5 mb-2 flex">
+            <div class="w-1/5 flex items-end">
+                <span class="number-lg">5</span>
+            </div>
+            <div class="w-4/5 flex items-end">
+                <span class="counter-lg">spilcentra en basisscholen <br>in Waalre <small class="text-{{ color }}-dark">**</small></span>
+            </div>
+        </div>
+        <div class="w-full lg:w-4/5 mb-2 flex">
+            <div class="w-1/5 flex items-end">
+                <span class="number-lg">3</span>
+            </div>
+            <div class="w-4/5 flex items-end">
+                <span class="counter-lg">kinderdagverblijven <br> stand alone </span>
+            </div>
+        </div>
+        <div class="w-full lg:w-4/5 mb-2 flex">
+            <div class="w-1/5 flex items-end">
+                <span class="number-lg"></span>
+            </div>
+            <div class="w-4/5 flex items-end">
+                <span class="counter-lg"><small class="text-{{ color }}-dark">* op 67 locaties <br>** op 4 locaties</small></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark flex justify-between">
+                <span>Bezoekers De Witte Dame</span>
+                <span>Bezoekers Expeditie E</span>
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5">
+            {% include "components/video.html.twig" with {
+                source : "feiten/002_Bezoekers_in_de bibliotheek_De_Witte_Dame"
+            } %}
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Aantal leden
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5">
+            <p class="text-{{ color }}-dark">
+                De Witte Dame
+            </p>
+        </div>
+        <div class="w-full lg:w-4/5">
+            <img class="block h-full w-full" src="assets/chapter-one/1-piegraph1.svg">
+        </div>
+        <div class="w-full lg:w-4/5 pt-12">
+            <p class="text-{{ color }}-dark">
+                Expeditie E
+            </p>
+        </div>
+        <div class="w-full lg:w-4/5">
+            <img class="block h-full w-full" src="assets/chapter-one/1-piegraph2.svg">
+        </div>
+        <div class="w-full lg:w-4/5 pt-12">
+            <p class="text-{{ color }}-dark">
+                de bibliotheek Waalre
+            </p>
+        </div>
+        <div class="w-full lg:w-4/5">
+            <img class="block h-full w-full" src="assets/chapter-one/1-piegraph3.svg">
+        </div>
+        <div class="w-full lg:w-4/5 pt-12">
+            <p class="text-{{ color }}-dark">
+                Jeugdleden onderwijsinstellingen
+            </p>
+        </div>
+        <div class="w-full lg:w-4/5">
+            <img class="block h-full w-full" src="assets/chapter-one/1-piegraph4.svg">
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                aantal betaalde abonnementen Eindhoven + Waalre
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5">
+            <img class="block h-auto w-max-full" src="assets/chapter-one/1-piegraph5.png">
+        </div>
+        <div class="hidden lg:flex w-1/5 items-end pl-6">
+            <a target="_blank" href="https://www.bibliotheekeindhoven.nl/lidworden.html" class="text-{{ color }}-dark">
+                Online inschrijven <br>
+                <img class="mt-2" src="assets/chapter-one/link-pink.svg" style="width: 30px">
+            </a>
+        </div>
+        {# <div class="w-full lg:w-4/5 flex pt-6">
+            <div class="w-1/3">
+                <span class="number-sm">1.044</span> <br>
+                Bieb Budget: <br>
+                €19 per jaar
+            </div>
+
+            <div class="w-1/3">
+                <span class="number-sm">7.079</span> <br>
+                Bieb Comfort: <br>
+                €47 per jaar
+            </div>
+
+            <div class="w-1/3">
+                <span class="number-sm">1.195</span> <br>
+                Bieb Deluxe: <br>
+                €68 per jaar
+            </div>
+        </div> #}
+        <div class="w-1/3 pt-6">
+            <span class="number-lg">535</span> <br>
+            Studenten <br>
+            20% korting
+        </div>
+        <div class="w-1/3 pt-6">
+            <span class="number-lg">657</span> <br>
+            Tientjesleden <br>(voor minima)
+        </div>
+
+        <div class=" w-full flex lg:hidden items-end">
+          <a target="_blank" href="https://www.bibliotheekeindhoven.nl/lidworden.html" class="text-{{ color }}-dark">
+            <div class="flex mt-4">
+              <div class="pr-2">
+                <img class="mt-2" src="assets/chapter-one/link-pink.svg" style="width: 32px">
+              </div>
+              <div class="flex-grow self-center">Online inschrijven</div>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Aantal nieuwe leden (18+)
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5">
+            <img class="block h-auto w-max-full" src="assets/chapter-one/1-piegraph6.png">
+        </div>
+        {# <div class="w-full lg:w-4/5 flex pt-6">
+            <div class="w-1/3">
+                <span class="number-sm">1.662</span> <br>
+                De Witte Dame
+            </div>
+
+            <div class="w-1/3">
+                <span class="number-sm">146</span> <br>
+                Expeditie E
+            </div>
+
+            <div class="w-1/3">
+                <span class="number-sm">84</span> <br>
+                de Bibliotheek Waalre
+            </div>
+        </div> #}
+    </div>
+
+     <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Werkplekken in de Witte Dame
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 flex flex-wrap pt-6">
+            <div class="w-1/2">
+                <span class="number-2xl">157</span> <br>
+                zonder computer
+            </div>
+        </div>
+        <div class="w-full lg:w-4/5 flex flex-wrap pt-6">
+            <div class="w-1/2">
+                <span class="number-lg">31</span> <br>
+                met computer
+            </div>
+            <div class="w-1/2">
+                <span class="number-lg">4</span> <br>
+                computers speciaal voor kinderen
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Totaal aantal projecten op basisscholen en SPIL-centra
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5">
+            <p class="text-{{ color }}-dark">
+                Eindhoven
+            </p>
+        </div>
+        <div class="w-full lg:w-4/5 flex flex-wrap pt-6">
+            <div class="w-full flex items-end">
+                <span class="number-2xl">1.072</span>
+                <span class="counter-2xl ml-8">projecten</span>
+            </div>
+            <div class="w-full flex items-end">
+                <span class="number-lg">21.907</span>
+                <span class="counter-lg ml-8">deelnemers</span>
+            </div>
+        </div>
+        <div class="w-full lg:w-4/5 pt-12">
+            <p class="text-{{ color }}-dark">
+                Waalre
+            </p>
+        </div>
+        <div class="w-full lg:w-4/5 flex flex-wrap pt-6">
+            <div class="w-1/2">
+                <span class="number-lg">175</span> <br>
+                projecten
+            </div>
+            <div class="w-1/2">
+                <span class="number-lg">3.582</span> <br>
+                deelnemers
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark"></p>
+        </div>
+    </div>
+
+{% endblock %}

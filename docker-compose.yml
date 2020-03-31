@@ -1,0 +1,42 @@
+version: '3'
+services:
+  web:
+    build:
+        context: './config/docker/php'
+        dockerfile: './Dockerfile'
+    ports:
+        - '8080:80'
+        - '9090:8080'
+    volumes:
+        - './server/public:/var/www/html'
+        - './server/private:/var/www/private'
+    environment:
+        ENVIRONMENT: dev
+        DB_DSN: mysql:host=database;port=3306;dbname=docker
+        DB_USER: docker
+        DB_PASSWORD: docker
+        DB_TABLE_PREFIX: docker_
+
+  phpmyadmin:
+    depends_on:
+      - database
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - '8081:80'
+    environment:
+      PMA_HOST: database
+      MYSQL_ROOT_PASSWORD: password 
+    links:
+      - database:database
+      
+  database:
+    image: mariadb
+    ports:
+      - '8082:3306'
+    volumes:
+      - ./server/database:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: docker
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: docker

@@ -1,0 +1,58 @@
+<header id="top" class="header overflow-x-hidden bg-{{ color }} pb-16">
+    <div class="container mx-auto">
+        <div class="cover-wrapper relative mx-6">
+            <div class="w-1/3 lg:w-1/4 absolute pin-b pin-r z-20" style="margin-right: 10%">
+                <img class="block" src="assets/header/2019.svg">
+            </div>
+            <div class="w-full absolute pin-t pin-l z-10" style="">
+                <img class="logo block ml-6 mt-12" src="assets/header/logo.png">
+            </div>
+            <div class="w-full absolute pin-b z-10" style="width: calc(100% + 8px); transform: translate(-4px, 0)">
+                <img class="block" src="assets/header/header.png">
+            </div>
+            <div class="w-full relative z-0" style="transform: translate(0, -4px)">
+                <img class="block" src="assets/header/cover.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto flex flex-wrap pt-6 pb-6">
+        <div class="w-full lg:w-full flex-none">
+            <div class="sticky pin-t flex">
+                <div class="hidden lg:block w-1/6 p-6">
+                <ul class="menu mt-20 list-reset">
+                  <li class="nav-item nav-chapter" data-target="0" data-chapter="1">Wij bereiken iedereen</li>
+                  <li class="nav-item" data-target="1">Feiten en cijfers</li>
+                  <li class="nav-item nav-chapter" data-target="2" data-chapter="2">Wij dragen bij aan de ontwikkeling van mensen</li>
+                  <li class="nav-item" data-target="3">Taal</li>
+                  <li class="nav-item" data-target="4">Digitaal</li>
+                  <li class="nav-item" data-target="5">Kennisdeling en talentontwikkeling</li>
+                  <li class="nav-item nav-chapter" data-target="6" data-chapter="3">Wij zijn ondernemend, innovatief en werken samen</li>
+                  <li class="nav-item" data-target="7">Meedoen</li>
+                  <li class="nav-item" data-target="8">Verbonden met de stad</li>
+                </ul>
+                </div>
+                <div class="text w-full lg:w-1/2 p-6">
+                    <h1 class="hidden lg:block text-5xl text-{{ color }}-dark mb-8 leading-none">&nbsp;</h1>
+                    {% block leftContent %}
+                        <p>De bibliotheek als ontwikkelaar van mensen. Dat is de titel van onze lange-termijn toekomstvisie die we eind 2019 opleverden. Wij willen niet alleen informatie aanbieden. Wij willen mensen ondersteunen en stimuleren om die informatie te filteren, beoordelen, begrijpen en om te zetten in praktische kennis en wijsheid. Wij helpen mensen zelfredzaam te worden en zich verder te ontplooien. We zijn meer dan een gebouw vol boeken. We zijn een ontwikkelaar van mensen.</p>
+<p>De bibliotheek is, en blijft, een toegankelijke plek voor inspiratie, het opdoen van ervaringen, verdieping en het delen van kennis. Als inhoudsregisseur brengen we de juiste partijen bij elkaar om inhoud uit te diepen en toegankelijk te maken voor een breed publiek. Maar we zijn ook een inhoudsspecialist, door zelf verdieping aan te brengen en kennis uit te dragen. Bijvoorbeeld als het gaat over het bevorderen van leesplezier of digitale vaardigheden. Het aanbieden van inhoud die er toe leidt dat welzijn en welvaart verhoogd wordt en mensen beter in staat zijn deel te nemen aan de maatschappij - en die ook zelf mede vorm kunnen geven - past bij de bibliotheek.
+</p>
+<p>We richten ons op de toekomst. Maar we staan ook met aandacht en trots stil bij wat we in 2019 bereikt hebben.</p>
+                    {% endblock %}
+                    <p class="pt-4">
+                    <a class="thicc-link text-white mt-4 flex items-center" style="border: none" href="https://www.bibliotheekeindhoven.nl/dam/bestanden/visiedocument.pdf" target="_blank">
+                       <img class="mr-2" src="assets/link.svg" alt="">
+                       <span>
+                      Bekijk De bibliotheek als ontwikkelaar van mensen
+                       </span>
+                    </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="statistic w-1/2">
+            {% block rightContent %}
+            {% endblock %}
+        </div>
+    </div>
+</header>

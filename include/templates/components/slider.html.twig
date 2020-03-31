@@ -1,0 +1,40 @@
+{# <div class="siema-wrapper w-full h-full relative" data-color="{{ color }}">
+    <div class="siema-slider bg-black">
+        {% for slide in slides %}
+            <div class="siema-slide swiper-slide relative" style="background-image: url({{ slide.image }})">
+                {% if slide.caption %}
+                    <div class="absolute p-4 text-2xl leading-normal bg-{{ color }} pin-t pin-l opacity-85" style="margin-left: {{ slide.caption.x }}; margin-top: {{ slide.caption.y }}">{{ slide.caption.text|raw }}</div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <div class="siema-control flex absolute pin-b pin-r m-6">
+        {% for slide in slides %}
+            <div class="siema-control-item cursor-pointer border-white border-2 w-6 h-6 m-1 rounded-full" data-target="{{ loop.index0 }}"></div>
+        {% endfor %}
+    </div>
+</div> #}
+
+{# <div class="swiper-container w-full h-full relative" data-color="{{ color }}">
+    <div class="swiper-wrapper bg-black">
+        {% for slide in slides %}
+            <div class="swiper-slide relative" style="background-image: url({{ slide.image }})">
+                {% if slide.caption %}
+                    <div class="slide-caption absolute p-4 text-2xl leading-normal bg-{{ color }} pin-t pin-l opacity-85" data-margin-left="{{ slide.caption.x }}" data-margin-top="{{ slide.caption.y }}">{{ slide.caption.text|raw }}</div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+    <div class="swiper-pagination flex justify-center lg:justify-end lg:pr-12 pb-6 lg:pb-12"></div>
+</div> #}
+
+<div class="swiper-container w-full h-full relative" data-color="{{ color }}">
+    <div class="swiper-wrapper bg-black">
+        {% for slide in slides %}
+            <div class="swiper-slide relative">
+                <img src="{{ slide.image }}" alt="">
+            </div>
+        {% endfor %}
+    </div>
+    <div class="swiper-pagination flex justify-center lg:justify-end lg:pr-12 pb-6 lg:pb-12"></div>
+</div>

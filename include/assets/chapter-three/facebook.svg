@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 8</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="facebook" transform="translate(1.000000, 1.000000)">
+            <g id="Group-8">
+                <path d="M24,48 C37.234,48 48,37.233 48,24 C48,10.767 37.234,0 24,0 C10.766,0 0,10.767 0,24 C0,37.233 10.766,48 24,48 Z" id="Stroke-7" stroke="#E02020" stroke-width="2"></path>
+                <path d="M29.4774,24.0086 L25.8944,24.0086 L25.8944,36.7836 L20.5844,36.7836 L20.5844,24.0086 L18.0594,24.0086 L18.0594,19.4956 L20.5844,19.4956 L20.5844,16.5756 C20.5844,14.4876 21.5764,11.2176 25.9424,11.2176 L29.8754,11.2336 L29.8754,15.6146 L27.0214,15.6146 C26.5534,15.6146 25.8944,15.8486 25.8944,16.8436 L25.8944,19.4996 L29.9404,19.4996 L29.4774,24.0086 Z" id="Fill-9" fill="#E02020"></path>
+            </g>
+        </g>
+    </g>
+</svg>

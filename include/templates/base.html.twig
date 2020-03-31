@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+
+    <!-- Search Engine -->
+    <meta name="description" content="Jaarverslag 2018">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Het Jaar In Beeld">
+    <meta itemprop="description" content="Jaarverslag 2018">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Het Jaar In Beeld">
+    <meta name="og:description" content="Jaarverslag 2018">
+    <meta name="og:image" content="assets/header/2018.png">
+    <meta name="og:url" content="http://hetjaarinbeeld.nl">
+    <meta name="og:site_name" content="Het Jaar In Beeld">
+    <meta name="og:locale" content="nl">
+    <meta name="og:type" content="website">
+
+    <link rel="stylesheet" href="css/main.css?v=1.1">
+</head>
+<body class="text-white">
+    <div class="burger cursor-pointer fixed pin-r pin-t z-50 flex flex-wrap justify-center content-center lg:hidden w-12 h-12 mr-4 mt-4 bg-white rounded-full">
+      <div class="w-6 mx-3 border-b-2 border-blue-dark"></div>
+      <div class="w-6 mx-3 my-2 border-b-2 border-blue-dark"></div>
+      <div class="w-6 mx-3 border-b-2 border-blue-dark"></div>
+    </div>
+    
+    <div class="video-trigger-top"></div>
+    <div class="video-trigger-bottom"></div>
+
+    <div class="mobile-menu bg-white z-40 w-full h-screen flex">
+        <ul class="text-blue-dark text-xl mt-20 list-reset w-full">
+            <li class="mobile-nav-item p-6 border-b-2 border-blue-dark" data-target="0">Feiten en cijfers</li>
+            <li class="mobile-nav-item p-6 border-b-2 border-blue-dark" data-target="1">Leesplezier</li>
+            <li class="mobile-nav-item p-6 border-b-2 border-blue-dark" data-target="2">Digitale geletterdheid</li>
+            <li class="mobile-nav-item p-6 border-b-2 border-blue-dark" data-target="3">Kennisdeling en<br><span class="ml-4">talentontwikkeling</span></li>
+            <li class="mobile-nav-item p-6 border-b-2 border-blue-dark" data-target="4">Meedoen</li>
+            <li class="mobile-nav-item p-6" data-target="5">Verbonden met de stad</li>
+        </ul>
+    </div>
+
+    <div class="wrapper relative">
+    
+      {% block content %}{% endblock %}
+    
+    </div>
+
+    <script src="js/main.js?v=1.1"></script>
+</body>
+</html>

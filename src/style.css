@@ -1,0 +1,581 @@
+/**
+* This injects Tailwind's base styles, which is a combination of
+* Normalize.css and some additional base styles.
+*
+* You can see the styles here:
+* https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+*
+* If using `postcss-import`, use this import instead:
+*
+* @import "tailwindcss/preflight";
+*/
+@tailwind preflight;
+
+/**
+* This injects any component classes registered by plugins.
+*
+* If using `postcss-import`, use this import instead:
+*
+* @import "tailwindcss/components";
+*/
+@tailwind components;
+
+/**
+* Here you would add any of your custom component classes; stuff that you'd
+* want loaded *before* the utilities so that the utilities could still
+* override them.
+*
+* Example:
+*
+* .btn { ... }
+* .form-input { ... }
+*
+* Or if using a preprocessor or `postcss-import`:
+*
+* @import "components/buttons";
+* @import "components/forms";
+*/
+
+/**
+* This injects all of Tailwind's utility classes, generated based on your
+* config file.
+*
+* If using `postcss-import`, use this import instead:
+*
+* @import "tailwindcss/utilities";
+*/
+@tailwind utilities;
+
+/**
+* Here you would add any custom utilities you need that don't come out of the
+* box with Tailwind.
+*
+* Example :
+*
+* .bg-pattern-graph-paper { ... }
+* .skew-45 { ... }
+*
+* Or if using a preprocessor or `postcss-import`:
+*
+* @import "utilities/background-patterns";
+* @import "utilities/skew-transforms";
+*/
+
+@font-face {
+  font-family: 'TheMix';
+  src: url('/assets/fonts/TheMix/TheMix-B5Plain.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/TheMix/TheMix-B5Plain.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/TheMix/TheMix-B5Plain.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/TheMix/TheMix-B5Plain.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/TheMix/TheMix-B5Plain.svg#TheMix-B5Plain') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'TheMix-SemiBold';
+  src: url('/assets/fonts/TheMix-SemBd-B/TheMix-B6SemiBold.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/TheMix-SemBd-B/TheMix-B6SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/TheMix-SemBd-B/TheMix-B6SemiBold.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/TheMix-SemBd-B/TheMix-B6SemiBold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/TheMix-SemBd-B/TheMix-B6SemiBold.svg#TheMix-B5Plain') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'TheMix-Bold';
+  src: url('/assets/fonts/TheMix-B/TheMix-B7Bold.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/TheMix-B/TheMix-B7Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/TheMix-B/TheMix-B7Bold.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/TheMix-B/TheMix-B7Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/TheMix-B/TheMix-B7Bold.svg#TheMix-B7Bold') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'TheMix-ExtraBold';
+  src: url('/assets/fonts/TheMix-ExtBd-B/TheMix-B8ExtraBold.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/TheMix-ExtBd-B/TheMix-B8ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/TheMix-ExtBd-B/TheMix-B8ExtraBold.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/TheMix-ExtBd-B/TheMix-B8ExtraBold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/TheMix-ExtBd-B/TheMix-B8ExtraBold.svg#TheMix-B7Bold') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  font-family: 'TheMix', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.text a {
+  text-decoration: none;
+  border-bottom: 1.5px solid white;
+}
+
+.links-have-no-underline a {
+  border-bottom: 0;
+}
+.links-have-no-underline a:hover {
+  border-bottom: 1.5px solid white;
+}
+
+a br {
+  display: none;
+}
+
+@screen lg {
+  a br {
+    display: block;
+  }
+}
+
+a.thicc-link {
+  font-family: 'TheMix-ExtraBold';
+  text-decoration: none;
+}
+a.thicc-link:hover {
+  text-decoration: underline;
+}
+
+.text-intro p {
+  font-size: 25px;
+  letter-spacing: 0.01px;
+  line-height: 1.25;
+}
+
+.text p  {
+  font-size: 16px;
+  line-height: 1.45;
+  margin-top: 1em;
+}
+
+.text p:first-child {
+  margin-top: 0;
+}
+
+@screen xl {
+  .text p  {
+    font-size: 20px;
+  }
+}
+
+.caption {
+  font-size: 14px;
+}
+
+@screen md {
+  .caption {
+    font-size: 18px;
+  }
+}
+
+.number-sm {
+  font-family: 'TheMix-ExtraBold', sans-serif;
+  font-size: 32px;
+  line-height: 1;
+}
+.number-lg {
+  font-family: 'TheMix-ExtraBold', sans-serif;
+  font-size: 40px;
+  line-height: 1;
+}
+.counter-lg {
+  margin-bottom: .25rem;
+}
+.number-xl {
+  font-family: 'TheMix-ExtraBold', sans-serif;
+  font-size: 64px;
+  line-height: 1;
+}
+.counter-xl {
+  margin-bottom: .7rem;
+}
+.number-2xl {
+  font-family: 'TheMix-ExtraBold', sans-serif;
+  font-size: 72px;
+  line-height: 1;
+}
+.counter-2xl {
+  margin-bottom: .8rem;
+}
+
+@screen md {
+  .number-sm {
+    font-size: 32px;
+  }
+  .number-lg {
+    font-size: 64px;
+  }
+  .counter-lg {
+    margin-bottom: .6rem;
+  }
+  .number-xl {
+    font-size: 96px;
+  }
+  .counter-xl {
+    margin-bottom: 1.65rem;
+  }
+  .number-2xl {
+    font-size: 128px;
+  }
+  .counter-2xl {
+    margin-bottom: 1.65rem;
+  }
+}
+
+@screen lg {
+  .number-sm {
+    font-size: 32px;
+  }
+  .number-lg {
+    font-size: 40px;
+  }
+  .counter-lg {
+    margin-bottom: .25rem;
+  }
+  .number-xl {
+    font-size: 64px;
+  }
+  .counter-xl {
+    margin-bottom: .7rem;
+  }
+  .number-2xl {
+    font-size: 72px;
+  }
+  .counter-2xl {
+    margin-bottom: .8rem;
+  }
+}
+
+@screen xl {
+  .number-sm {
+    font-size: 32px;
+  }
+  .number-lg {
+    font-size: 64px;
+  }
+  .counter-lg {
+    margin-bottom: .6rem;
+  }
+  .number-xl {
+    font-size: 96px;
+  }
+  .counter-xl {
+    margin-bottom: 1.65rem;
+  }
+  .number-2xl {
+    font-size: 128px;
+  }
+  .counter-2xl {
+    margin-bottom: 1.65rem;
+  }
+}
+
+.menu,
+h1,
+h2 {
+  font-family: 'TheMix-Bold';
+  font-weight: bold;
+}
+
+.page-header {
+  padding-bottom: 1rem !important;
+}
+
+.page-header h1 {
+    font-family: 'TheMix-ExtraBold';
+  }
+.page-header p {
+  font-family: 'TheMix-SemiBold';
+}
+
+/* @screen md {
+  .number-sm {
+    font-family: 'TheMix-ExtraBold', sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .number-lg {
+    font-family: 'TheMix-ExtraBold', sans-serif;
+    font-size: 64px;
+    line-height: 64px;
+  }
+  .counter-lg {
+    margin-bottom: .6rem;
+  }
+  .number-xl {
+    font-family: 'TheMix-ExtraBold', sans-serif;
+    font-size: 96px;
+    line-height: 96px;
+  }
+  .counter-xl {
+    margin-bottom: 1.65rem;
+  }
+  .number-2xl {
+    font-family: 'TheMix-ExtraBold', sans-serif;
+    font-size: 128px;
+    line-height: 128px;
+  }
+  .counter-2xl {
+    margin-bottom: 1.65rem;
+  }
+} */
+
+.statistic {
+  font-size: 14px;
+  line-height: 1;
+  font-family: 'TheMix-SemiBold';
+}
+
+.statistic .caption {
+  font-size: 17px;
+  font-family: 'TheMix-SemiBold';
+}
+
+.statistic .w-1\/5 a {
+  font-size: 12px;
+}
+.statistic .w-1\/5 p {
+  font-size: 12px;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 2000px;
+}
+
+/* .separator {
+  width: 100%;
+  height: 80vw;
+}
+
+@screen lg {
+  .separator {
+    height: 50vw;
+  }
+} */
+
+
+/* .swiper-slide {
+  width: 100%;
+  height: 80vw;
+  background-position: center;
+  background-size: cover;
+}
+
+@screen lg {
+  .swiper-slide {
+    height: 50vw;
+  }
+} */
+
+.separator {
+  width: 100%;
+  /* height: 80vw; */
+}
+
+@screen lg {
+  .separator {
+    /* height: 50vw; */
+  }
+}
+
+.swiper-slide {
+  width: 100%;
+  background: transparent;
+  /* height: 80vw; */
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+}
+
+@screen lg {
+  .swiper-slide {
+    /* height: 50vw; */
+  }
+}
+
+
+.swiper-pagination-bullets {
+  bottom: 0 !important;
+}
+.swiper-pagination-bullet {
+  border: 2px solid white;
+  background: transparent;
+  width: 16px;
+  height: 16px;
+  opacity: 1;
+}
+
+@screen lg {
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
+}
+
+.up {
+  cursor: pointer;
+}
+
+.menu {
+  transform: translateX(0.75rem);
+}
+
+.menu li {
+  line-height: 21px;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+.menu li.nav-item:before {
+  content: "> ";
+  position: relative;
+  bottom: 1px;
+}
+.menu li.nav-chapter:before {
+  content: attr(data-chapter) ".";
+  position: absolute;
+  left: -1em;
+  bottom: auto;
+}
+
+.mobile-nav-item {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.mobile-nav-item:before {
+  content: ">";
+  position: relative;
+  left: -0.5em;
+}
+
+.video-trigger-top,
+.video-trigger-bottom {
+    width: 100%;
+    text-indent: -50%;
+    position: fixed;
+    top: 33%;
+    z-index: 9999;
+}
+
+.video-trigger-bottom {
+    top: auto;
+    bottom: 33%;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+.gandalf {
+  @apply fixed;
+}
+
+.gandalf.fallen {
+  @apply hidden;
+}
+
+
+
+.wrapper {
+ @apply relative w-full h-full;
+}
+.wrapper.limited {
+  @apply h-screen overflow-hidden;
+}
+
+
+@screen lg {
+  .gandalf {
+    @apply hidden;
+  }
+
+  .wrapper {
+    @apply h-full;
+  }
+}
+
+
+.logo {
+  width: 33.33333%;
+}
+
+@screen md {
+  .logo {
+    width: 25%;
+  }
+}
+
+@screen lg {
+  .logo {
+    width: 300px
+  }
+}
+
+.slide-caption {
+  font-size: 14px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+@screen md {
+  .slide-caption {
+    font-size: 24px;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  transition: top 400ms ease;
+}
+
+.mobile-menu.active {
+  top: 0;
+}
+
+.burger div {
+  transition: transform 400ms ease;
+}
+
+.burger.active div:first-child {
+    transform: translate(0, .625rem) rotate(45deg);
+}
+.burger.active div:not(:first-child):not(:last-child) {
+    transform: rotateY(90deg);
+}
+.burger.active div:last-child {
+    transform: translate(0, -0.625rem) rotate(-45deg);
+}

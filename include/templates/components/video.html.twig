@@ -1,0 +1,19 @@
+{# <div class="video-wrapper">
+    <div class="video-tracker w-full">
+        <video class="video w-full" src="assets/webm/{{ source }}" muted="muted" playsinline>
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    </div>
+</div> #}
+
+{% set webm = source ~ '.webm' %}
+{% set mp4 = source ~ '.mp4' %}
+
+<div class="video-wrapper">
+    <div class="video-tracker w-full">
+        <video class="video w-full" muted="muted" playsinline>
+            <source src="assets/webm/{{ webm }}" type='video/webm'>
+            <source src="assets/mp4/{{ mp4 }}" type='video/mp4'>
+        </video>
+    </div>
+</div> 

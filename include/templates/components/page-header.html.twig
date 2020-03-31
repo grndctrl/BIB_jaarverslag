@@ -1,0 +1,30 @@
+<section data-page="{{ currentPage }}" class="page-header bg-{{ color }} lg:py-16">
+    <div class="container mx-auto flex flex-wrap pt-6 pb-6">
+        <div class="w-full flex-none">
+            <div class="flex flex-wrap">
+                <div class="block lg:hidden p-6 text-{{ color }}-dark">
+                    <h1 class="text-4xl">
+                        {{ chapter }}
+                        {{ title }}
+                    </h1>
+                </div>
+                <div class="hidden lg:block w-1/6 p-6 text-{{ color }}-dark">
+                    <h1 class="text-7xl">
+                        {{ chapter }}
+                    </h1>
+                </div>
+                <div class="hidden lg:block lg:w-2/3 p-6 text-{{ color }}-dark">
+                    <h1 class="text-7xl">
+                        {{ title }}
+                    </h1>
+                </div>
+            </div>
+            <div class="flex flex-wrap">
+                <div class="hidden lg:block w-1/6"></div>
+                <div class="w-full text-intro text-{{ color }}-dark lg:w-1/2 p-6">
+                    {% block headerContent %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

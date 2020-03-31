@@ -1,0 +1,94 @@
+{% extends "components/page.html.twig" %}
+
+{% block leftContent %}
+    <p>
+        Informatie en kennis zijn essentieel voor zelfontwikkeling. Als inhoudsregisseur brengen wij de juiste partijen samen om onderwerpen onder de aandacht te brengen die mensen helpen hun welvaart en welzijn te vergroten.
+    </p>
+    <p>
+        Dit leidt tot een rijk en gevarieerd aanbod aan activiteiten, workshops en lezingen. Bekende namen gaven een lezing, zoals Griet Op de Beeck, Frits Philips, Kader Abdolah en Tim Fransen. Je kon kennis opdoen over geluk, gezondheid, opvoeding en heel veel meer.
+    </p>
+    <p>
+        Kinderen leren veel door te doen. <a href="https://www.grooteindhoven.nl/nieuws/algemeen/889295/kleine-handjes-met-groot-gereedschap-" target="_blank">De Makersplaats</a> heeft een vaste plek gekregen in De Witte Dame. In de werkplaats staat een scala aan gereedschap en materialen ter beschikking. Hier stimuleren we bij zowel kinderen als volwassenen dat ze zelfstandig of onder begeleiding hun talenten ontdekken, verdiepen en delen. 
+    </p>
+    <p>
+        We boden een podium <a href="https://www.bibliotheekeindhoven.nl/ben-jij-een-kennismaker-.html" target="_blank">&lsquo;KennisMakers&rsquo;</a>, mensen uit Eindhoven en Waalre die hun kennis willen delen, en zetten een reeks aan spreekuren op waarin specifieke kennis gedeeld werd; voor studenten, vrijwilligers, mensen met juridische vragen en werkzoekenden.
+    </p>
+    <p>
+        We spelen in op wat er in de stad speelt en belangrijke gebeurtenissen. Zo ontwikkelden we het project <a href="https://www.youtube.com/watch?v=0KDY1Vgm_uI" target="_blank">&lsquo;75 jaar bevrijd, oud vertelt, jong geeft het door&rsquo;.</a> Begeleid door leerlingen van het Summa College interviewden basisschoolleerlingen ooggetuigen van WOII. Studenten van het SintLucas verwerkte deze verhalen in een <a href="https://www.bibliotheekeindhoven.nl/eindhoven-75-jaar-bevrijd.html" target="_blank">digitaal magazine.</a> 
+    </p>
+    <p>
+    Eindhoven wordt steeds internationaler. In samenhang daarmee is het <a href="https://eindhoven.op-shop.nl/ingang/internationals/" target="_blank">Engelstalige programma</a> flink vergroot. 
+    </p>
+    <p>
+    We hebben het initiatief genomen om een netwerk voor een <a href="https://issuu.com/bibliotheekeindhoven/docs/leven-lang-ontwikkelen" target="_blank">Leven Lang Ontwikkelen</a> op te zetten in Eindhoven. Dit resulteerde in een pleidooi voor een excellente, eigentijdse, regionale infrastructuur voor een leven lang ontwikkelen.
+    </p>
+{% endblock %}
+
+{% block rightContent %}
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Aantal deelnemers aan activiteiten
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5">
+       
+        {% include "components/video.html.twig" with {
+                    source : "kennisdeling/001_Aantal deelnemers aan activiteiten"
+                } %}
+
+        <div>
+         <img class="block h-full mt-8 w-max-full" src="assets/chapter-four/chart.svg">
+        </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Aantal evenementen
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 flex flex-wrap">
+        {# <div class="w-1/3 text-center text-{{ color }}-dark">De Witte Dame</div>
+        <div class="w-1/3 text-center text-{{ color }}-dark">Expeditie E</div>
+        <div class="w-1/3 text-center text-{{ color }}-dark">de Bibliotheek <br>Waalre</div> #}
+        <div class="w-full">
+         <img class="block h-auto w-max-full" src="assets/chapter-four/chart-2.png">
+        </div>
+        {# <div class="w-1/3 text-center number-lg">557</div>
+        <div class="w-1/3 text-center number-lg">67</div>
+        <div class="w-1/3 text-center number-lg">216</div> #}
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark">
+                Activiteiten ter professionalisering van leerkrachten en pedagogisch medewerkers
+            </p>
+        </div>
+    </div>
+    <div class="flex flex-wrap p-6 py-0 pb-4">
+        <div class="w-full lg:w-4/5 flex flex-wrap">
+            <div class="w-1/2">
+                <span class="number-2xl">62</span><br>activiteiten
+            </div>
+            <div class="w-1/2">
+                <span class="number-2xl">403</span><br>deelnemers
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-wrap p-6">
+        <div class="w-full lg:w-4/5">
+            <p class="caption pt-2 text-{{ color }}-dark border-t border-{{ color }}-dark"></p>
+        </div>
+    </div>
+
+{% endblock %}

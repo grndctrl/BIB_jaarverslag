@@ -1,0 +1,296 @@
+{% extends "base.html.twig" %}
+
+{% block test %}
+    <div class="container bg-pink w-full flex">
+        <div class="w-1/2 p-6">
+            {% include "components/mp4.html.twig" with {
+                source: "001_Bezoekers in de bibliotheek De Witte Dame_1"
+            } %}
+        </div>
+        <div class="w-1/2 p-6">
+            {% include "components/webm.html.twig" with {
+                source: "001_Bezoekers in de bibliotheek De Witte Dame_1"
+            } %}
+        </div>
+    </div>
+
+    <div class="container bg-teal w-full flex">
+        <div class="w-1/2 p-6">
+            {% include "components/mp4.html.twig" with {
+                source: "002_Aantal uitgeleende boeken_3"
+            } %}
+        </div>
+        <div class="w-1/2 p-6">
+            {% include "components/webm.html.twig" with {
+                source: "002_Aantal uitgeleende boeken_1"
+            } %}
+        </div>
+    </div>
+
+    <div class="container bg-red w-full flex">
+        <div class="w-1/2 p-6">
+            {% include "components/mp4.html.twig" with {
+                source: "008_ Projecten_1"
+            } %}
+        </div>
+        <div class="w-1/2 p-6">
+            {% include "components/webm.html.twig" with {
+                source: "008_ Projecten"
+            } %}
+        </div>
+    </div>
+
+    <div class="container bg-blue w-full flex">
+        <div class="w-1/2 p-6">
+            {% include "components/mp4.html.twig" with {
+                source: "015_Aantal deelnemers aan activiteiten_1"
+            } %}
+        </div>
+        <div class="w-1/2 p-6">
+            {% include "components/webm.html.twig" with {
+                source: "015_Aantal deelnemers aan activiteiten"
+            } %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    {% include "partials/0_header.html.twig" with {
+        color : "purple"
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        color : "purple",
+        slides: [
+            {
+                image: "assets/header/slide001.jpg",
+                caption: ""
+            }, {
+                image: "assets/header/slide002.jpg",
+                caption: ""
+            }, {
+                image: "assets/header/slide003.jpg",
+                caption: ""
+            }, {
+                image: "assets/header/slide004.jpg",
+                caption: ""
+            }, {
+                image: "assets/header/slide005.jpg",
+                caption: ""
+            }
+        ]
+    } %}
+
+    {% include "partials/1_wij-bereiken-iedereen.html.twig" with {
+        color: 'pink',
+        chapter: 1,
+        currentPage: 0,
+        title: 'Wij bereiken iedereen'
+    } %}
+
+    {% include "partials/1_feiten-en-cijfers.html.twig" with {
+        color: 'pink',
+        currentPage: 1,
+        title: 'Feiten en cijfers'
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        color: 'pink',
+        slides: [
+            { 
+                image: 'assets/chapter-one/slide001.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-one/slide002.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-one/slide003.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-one/slide004.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-one/slide005.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-one/slide006.jpg',
+                caption: ''
+            },
+        ]
+    } %}
+
+    {% include "partials/2_wij-dragen-bij.html.twig" with {
+        color: 'teal',
+        chapter: 2,
+        currentPage: 2,
+        title: 'Wij dragen bij aan de ontwikkeling van mensen'
+    } %}
+
+    {% include "partials/2_taal.html.twig" with {
+        color : "teal",
+        currentPage: 3,
+        title: "Taal"
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        color: 'teal',
+        slides: [
+            { 
+                image: 'assets/chapter-two/slide001.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-two/slide002.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-two/slide003.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-two/slide004.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-two/slide005.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-two/slide006.jpg',
+                caption: ''
+            }
+        ]
+    } %}
+
+    {% include "partials/2_digitaal.html.twig" with {
+        color: 'red',
+        currentPage: 4,
+        title: 'Digitaal'
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        color: 'red',
+        slides: [
+            { 
+                image: 'assets/chapter-three/slide001.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-three/slide002.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-three/slide003.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-three/slide004.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-three/slide005.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-three/slide006.jpg',
+                caption: ''
+            },
+        ]
+    } %}
+
+    {% include "partials/2_kennisdeling.html.twig" with {
+        color: 'blue',
+        currentPage: 5,
+        title: 'Kennisdeling en <br>talentontwikkeling'
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        color: 'blue',
+        slides: [
+            { 
+                image: 'assets/chapter-four/slide001.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-four/slide002.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-four/slide003.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-four/slide004.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-four/slide005.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-four/slide006.jpg',
+                caption: ''
+            },
+            { 
+                image: 'assets/chapter-four/slide007.jpg',
+                caption: ''
+            }
+        ]
+    } %}
+
+    {% include "partials/3_wij-zijn-ondernemend.html.twig" with {
+        color : "yellow",
+        currentPage: 6,
+        chapter: 3,
+        title: "Wij zijn ondernemend, innovatief en werken samen"
+    } %}
+
+    {% include "partials/3_meedoen.html.twig" with {
+        color : "yellow",
+        currentPage: 7,
+        title: "Meedoen"
+    } %}
+
+    {% include "components/separator.html.twig" with {
+        color: 'yellow',
+        slides: [
+            { 
+                image: 'assets/chapter-five/slide001.jpg',
+                caption: '',
+            },{ 
+                image: 'assets/chapter-five/slide002.jpg',
+                caption: '',
+            },{ 
+                image: 'assets/chapter-five/slide003.jpg',
+                caption: '',
+            },{ 
+                image: 'assets/chapter-five/slide004.jpg',
+                caption: '',
+            },{ 
+                image: 'assets/chapter-five/slide005.jpg',
+                caption: '',
+            }
+        ]
+    } %}
+
+    {% include "partials/3_verbonden.html.twig" with {
+        color : "green",
+        currentPage: 8,
+        title: "Verbonden met de stad"
+    } %}
+
+    {% include "partials/3_partners.html.twig" with {
+        color : "green"
+    } %}
+
+    {% include "partials/4_footer.html.twig" with {
+        color : "green-dark"
+    } %}
+
+{% endblock %}

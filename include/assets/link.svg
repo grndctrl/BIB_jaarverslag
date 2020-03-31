@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="12px" viewBox="0 0 30 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>arrow white</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Jaar-In-Beeld" transform="translate(-267.000000, -1789.000000)">
+            <g id="Group-5" transform="translate(268.000000, 1782.000000)" stroke="#FEFEFE" stroke-linecap="round" stroke-width="2">
+                <g id="arrow-white" transform="translate(0.000000, 8.500000)">
+                    <polyline id="Stroke-43" points="22 0 27 4.50047634 22 9"></polyline>
+                    <line x1="0" y1="4.5" x2="27" y2="4.5" id="Stroke-42"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

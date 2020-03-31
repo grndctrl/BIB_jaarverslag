@@ -1,0 +1,50 @@
+{
+  "name": "tailwind-boilerplate",
+  "version": "0.1.0",
+  "description": "Tailwind CSS boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "docker:build": "docker kill $(docker ps -q); docker-compose up --build",
+    "docker:serve": "docker kill $(docker ps -q); docker-compose up -d",
+    "docker:stop": "docker-compose down --volumes",
+    "watch": "webpack --mode development --watch",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignism/tailwind-boilerplate.git"
+  },
+  "author": "Mark Brand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ignism/tailwind-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ignism/tailwind-boilerplate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "autoprefixer": "^9.7.4",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.6.0",
+    "core-js": "^3.6.4",
+    "css-loader": "^1.0.1",
+    "cssnano": "^4.1.10",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "siema": "^1.5.1",
+    "stickybits": "^3.7.4",
+    "tailwindcss": "^0.6.6",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "zenscroll": "^4.0.2"
+  },
+  "dependencies": {
+    "swiper": "^4.5.1"
+  }
+}

@@ -1,0 +1,30 @@
+<section data-page="{{ currentPage }}" class="page bg-{{ color }} lg:py-16">
+    <div class="container mx-auto flex flex-wrap pt-6 pb-6">
+        <div class="w-full lg:w-7/12 xl:w-1/2 flex-none">
+            <div class="sticky pin-t flex flex-wrap overflow-y-scroll">
+                <div class="w-full lg:w-2/3 p-6 pb-0 lg:ml-1/3">
+                    <h2 class="text-3xl lg:text-5xl text-{{ color }}-dark leading-none">{{ title|raw }}</h2>
+                </div>
+                <div class="hidden lg:block w-1/3 p-6">
+                    <ul class="menu list-reset">
+                        <li class="nav-item {% if currentPage == 0 %}text-{{ color }}-dark{% endif %} nav-chapter" data-target="0" data-chapter="1">Wij bereiken iedereen</li>
+                        <li class="nav-item {% if currentPage == 1 %}text-{{ color }}-dark{% endif %}" data-target="1">Feiten en cijfers</li>
+                        <li class="nav-item {% if currentPage == 2 %}text-{{ color }}-dark{% endif %} nav-chapter" data-target="2" data-chapter="2">Wij dragen bij aan de ontwikkeling van mensen</li>
+                        <li class="nav-item {% if currentPage == 3 %}text-{{ color }}-dark{% endif %}" data-target="3">Taal</li>
+                        <li class="nav-item {% if currentPage == 4 %}text-{{ color }}-dark{% endif %}" data-target="4">Digitaal</li>
+                        <li class="nav-item {% if currentPage == 5 %}text-{{ color }}-dark{% endif %}" data-target="5">Kennisdeling en talentontwikkeling</li>
+                        <li class="nav-item {% if currentPage == 6 %}text-{{ color }}-dark{% endif %} nav-chapter" data-target="6" data-chapter="3">Wij zijn ondernemend, innovatief en werken samen</li>
+                        <li class="nav-item {% if currentPage == 7 %}text-{{ color }}-dark{% endif %}" data-target="7">Meedoen</li>
+                        <li class="nav-item {% if currentPage == 8 %}text-{{ color }}-dark{% endif %}" data-target="8">Verbonden met de stad</li>
+                    </ul>
+                </div>
+                <div class="text w-full lg:w-2/3 p-6 lg:pr-12">
+                    {% block leftContent %}{% endblock %}
+                </div>
+            </div>
+        </div>
+        <div class="statistic w-full lg:w-5/12 xl:w-1/2">
+            {% block rightContent %}{% endblock %}
+        </div>
+    </div>
+</section>
