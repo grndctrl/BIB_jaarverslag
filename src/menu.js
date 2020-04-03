@@ -30,10 +30,13 @@ if (burger && menu && wrapper) {
   });
 
   let navItems = Array.from(document.getElementsByClassName('mobile-nav-item'))
-  let pages = Array.from(document.getElementsByClassName('page'))
+  let pages = Array.from(document.querySelectorAll('[data-page]'))
+  console.log("pages", pages.length)
+  console.log("pages", pages)
 
   navItems.forEach(item => {
-    let target = item.getAttribute('data-target')
+    let target = parseInt(item.getAttribute('data-target'))
+    console.log(target, pages[target])
     let element = pages[target].querySelector('.container')
 
     item.addEventListener('click', event => {

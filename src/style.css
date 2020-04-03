@@ -579,3 +579,53 @@ button:focus {
 .burger.active div:last-child {
     transform: translate(0, -0.625rem) rotate(-45deg);
 }
+
+@screen lg {
+  .scroll-desktop {
+    height: calc(100vh - 144px);
+    overflow-y: scroll;
+  }
+}
+
+.scroll-desktop .simplebar-scrollbar.simplebar-visible::before {
+  opacity: 0;
+}
+
+.scroll-desktop.show-scrollbar .simplebar-scrollbar.simplebar-visible::before {
+  opacity: 1;
+}
+
+.bg-red .simplebar-scrollbar::before {
+    background-color: #E02020;
+}
+
+.bg-yellow .simplebar-scrollbar::before {
+    background-color: #C79200;
+}
+
+.bg-teal .simplebar-scrollbar::before {
+    background-color: #00C275;
+}
+
+.bg-green .simplebar-scrollbar::before {
+    background-color: #00524E;
+}
+
+.bg-blue .simplebar-scrollbar::before {
+    background-color: #1619BE;
+}
+
+.bg-pink .simplebar-scrollbar::before {
+    background-color: #F41A69;
+}
+
+.bg-orange .simplebar-scrollbar::before {
+    background-color: #ff7320;
+}
+
+.scroll-desktop::-webkit-scrollbar {
+  display: none;
+}
+.scroll-desktop {
+  scrollbar-width: none;
+}

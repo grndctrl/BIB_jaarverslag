@@ -50,7 +50,7 @@ let colors = {
   'white': '#FEFEFE',
 
   'red-dark': '#E02020',
-  'red': '#ed9783',
+  'red': '#ee9883',
   
   'yellow-dark': '#C79200',
   'yellow': '#FED336',
@@ -62,7 +62,7 @@ let colors = {
   'green': '#4A8A87',
   
   'blue-dark': '#1619BE',
-  'blue': '#8c8ec0',
+  'blue': '#8d8fc0',
   
   'pink-dark': '#F41A69',
   'pink': '#f6b6cd',

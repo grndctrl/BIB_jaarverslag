@@ -10,6 +10,7 @@
     "watch": "webpack --mode development --watch",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
+    "browsersync": "browser-sync start --proxy localhost:8080",
     "rsync": "rsync -r -v --exclude-from=./config/.rsyncexclude \"$(npx json -f './config/rsync.json' 'source')\" \"$(npx json -f './config/rsync.json' 'target')\""
   },
   "repository": {
@@ -46,6 +47,9 @@
     "zenscroll": "^4.0.2"
   },
   "dependencies": {
+    "browser-sync": "^2.26.7",
+    "perfect-scrollbar": "^1.5.0",
+    "simplebar": "^5.1.0",
     "swiper": "^4.5.1"
   }
 }
